@@ -408,12 +408,12 @@
     // If new period result is available (compared to last known), generate new prediction
     if (lastLatestPeriod && lastLatestPeriod !== currentLatest) {
       generatePrediction();
-      statusEl.textContent = ``;
+      statusEl.textContent = `Telegram:@FORID0KSUPPORT`;
     } else if (!lastLatestPeriod) {
       // Initial load: generate first prediction
       generatePrediction();
       lastLatestPeriod = currentLatest;
-      statusEl.textContent = ``;
+      statusEl.textContent = `Telegram:@FORID0KSUPPORT`;
     }
 
     lastLatestPeriod = currentLatest;
