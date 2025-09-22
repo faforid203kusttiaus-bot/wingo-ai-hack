@@ -408,12 +408,12 @@
     // If new period result is available (compared to last known), generate new prediction
     if (lastLatestPeriod && lastLatestPeriod !== currentLatest) {
       generatePrediction();
-      statusEl.textContent = `Auto-refresh: Active (every 2 seconds) - New prediction generated for next period`;
+      statusEl.textContent = ``;
     } else if (!lastLatestPeriod) {
       // Initial load: generate first prediction
       generatePrediction();
       lastLatestPeriod = currentLatest;
-      statusEl.textContent = `Auto-refresh: Active (every 2 seconds) - Initial prediction generated`;
+      statusEl.textContent = ``;
     }
 
     lastLatestPeriod = currentLatest;
